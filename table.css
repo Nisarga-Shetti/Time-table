@@ -1,9 +1,11 @@
+/*Reset default styles*/
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
+/*Page style*/
 body{
     min-height: 100vh;
     padding: 40px 20px;
@@ -15,22 +17,28 @@ body{
                 #0f766e,
                 #312e81);
     background-size: 400% 400%;
+    /*Background animation*/
     animation: backgroundMove 12s ease infinite;
     color: #222;
 }
 
+/*Background animation*/
 @keyframes backgroundMove{
+    /*Start*/
     0%{
         background-position: 0% 50%;
     }
+    /*Middle*/
     50%{
         background-position: 100% 50%;
     }
+    /*End*/
     100%{
         background-position: 0% 50%;
     }
 }
 
+/*Main container*/
 .container{
     width: 100%;
     max-width: 1400px;
@@ -43,11 +51,13 @@ body{
     overflow: hidden;
 }
 
+/*Heading section*/
 .heading{
     text-align: center;
     margin-bottom: 30px;
 }
 
+/*main heading*/
 .heading h1{
     font-size: 40px;
     color: white;
@@ -57,6 +67,7 @@ body{
                     0 0 25px rgba(59,130,246,0.8);
 }
 
+/*Subtitle*/
 .heading p{
     color: #e2e8f0;
     font-size: 16px;
@@ -69,6 +80,7 @@ body{
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
+/*Main table*/
 table{
     width: 100%;
     min-width: 1100px;
@@ -78,6 +90,7 @@ table{
     background-color: white;
 }
 
+/*Table header*/
 thead th{
     border: 2px solid #64748b;
     background: linear-gradient(135deg,
@@ -89,12 +102,14 @@ thead th{
     white-space: nowrap;
 }
 
+/*First header child*/
 thead th:first-child{
     background: linear-gradient(135deg,
                 #dc2626,
                 #991b1b);
 }
 
+/*Table cells*/
 tbody th,
 tbody td{
     border: 1px solid #cbd5e1;
@@ -103,12 +118,14 @@ tbody td{
                 box-shadow 0.25s ease;
 }
 
+/*Day names*/
 tbody th{
     background: linear-gradient(135deg,#f1f5f9,#e2e8f0);
     color: #0f172a;
     font-weight: bold;
 }
 
+/*Subject colors*/
 .ka{background-color: #67e8f9;}
 .en{background-color: #86efac;}
 .hi{background-color: #fde047;}
@@ -119,17 +136,20 @@ tbody th{
 .li{background-color: #22d3ee;}
 .it{background-color: #dbeafe;}
 
+/*Break and launch*/
 .break,.lunch{
     background-color: #f9a8d4;
     font-weight: bold;
     color: #831843;
 }
 
+/*Sports  section*/
 .sports{
     background-color: #c4b5fd;
     font-weight: bold;
 }
 
+/*Legend heading*/
 .subject-title{
     text-align: center;
     color: white;
@@ -145,6 +165,7 @@ tbody th{
     gap: 12px;
 }
 
+/*Each subject item*/
 .subject-item{
     display: flex;
     align-items: center;
@@ -156,6 +177,7 @@ tbody th{
     font-size: 13px;
 }
 
+/*Color-circle*/
 .color-box{
     width: 15px;
     height: 15px;
@@ -163,6 +185,7 @@ tbody th{
     border: 1px solid rgba(0,0,0,0.7);
 }
 
+/*Footer*/
 footer{
     text-align: center;
     margin-top: 30px;
@@ -170,6 +193,7 @@ footer{
     font-size: 14px;
 }
 
+/*Footer bold text*/
 footer strong{
     color: white;
 }
