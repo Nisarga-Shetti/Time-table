@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Time Table</title>
+
+        <style>
+            h1{
+                font-size: 40px;
+                color: red;
+            }
+
+            table{
+                font-size: 16px;
+                text-align: center;
+                margin: auto;
+                border-collapse: collapse;
+                background-color: white;
+            }
+
+            th, td{
+                border: 2px solid black;
+                padding: 12px;
+            }
+
+            .tr{
+                border: 3px;;
+            }
+
+            .a1{background-color: burlywood;}
+            .ka{background-color: cadetblue;}
+            .en{background-color: lightgreen;}
+            .hi{background-color: yellow;}
+            .so{background-color: lightsalmon;}
+            .ma{background-color: lightblue;}
+            .sc{background-color: cornsilk;}
+            .cm{background-color: gold;}
+            .li{background-color: cyan;}
+            .it{background-color: aliceblue;}
+
+            .break,.lunch{
+                background-color: lightpink;
+            }
+        </style>
+    </head>
+
+    <!--Body part-->
+    <body>
+        
+        <center>
+            <!--Heading for the time table-->
+            <h1><b>Time Table of 10th Class</b></h1>
+
+            <table>
+
+                <tr>
+                    <th class="a1">Day/Time</th>
+                    <th class="a1">9:00-9:50</th>
+                    <th class="a1">9:55-10:45</th>
+                    <th class="a1">10:45-11:00</th>
+                    <th class="a1">11:00-11:50</th>
+                    <th class="a1">11:55-12:45</th>
+                    <th class="a1">12:50-1:40</th>
+                    <th class="a1">1:40-2:30</th>
+                    <th class="a1">2:30-3:20</th>
+                    <th class="a1">3:25-4:15</th>
+                </tr>
+
+                <!--Monday time table-->
+                <tr>
+                    <th class="a1">Monday</th>
+                    <td class="ka">Kannada</td>
+                    <td class="ma">Mathematics</td>
+                    <td class="break" rowspan="6">Break</td>
+                    <td class="en">English</td>
+                    <td class="so">Social</td>
+                    <td class="hi">Hindi</td>
+                    <td class="lunch" rowspan="6">Lunch</td>
+                    <td class="sc">Science</td>
+                    <td class="cm">Computer</td>
+                </tr>
+
+                <!--Tuesday time table -->
+                <tr>
+                    <th class="a1">Tuesday</th>
+                    <td class="sc">Science</td>
+                    <td class="en">English</td>
+                    <td class="hi">Hindi</td>
+                    <td class="cm">Computer</td>
+                    <td class="ka">Kannada</td>
+                    <td class="so">Social</td>
+                    <td class="ma">Mathematics</td>
+                </tr>
+
+                <!--wednesday time table-->
+                <tr>
+                    <th class="a1">Wednesday</th>
+                    <td class="cm">Computer</td>
+                    <td class="so">Social</td>
+                    <td class="ka">Kannada</td>
+                    <td class="ma">Mathematics</td>
+                    <td class="sc">Science</td>
+                    <td class="hi">Hindi</td>
+                    <td class="en">English</td>
+                </tr>
+
+                <!--Thursday time table-->
+                <tr>
+                    <th class="a1">Thursday</th>
+                    <td class="en">English</td>
+                    <td class="sc">Science</td>
+                    <td class="so">Social</td>
+                    <td class="hi">Hindi</td>
+                    <td class="en">English</td>
+                    <td class="Se" colspan="2">Sports/Spoken English</td>
+                </tr>
+
+                <!--Friday time table-->
+                    <th class="a1">Friday</th>
+                    <td class="hi">Hindi</td>
+                    <td class="en">English</td>
+                    <td class="ma">Mathematics</td>
+                    <td class="cm">Computer</td>
+                    <td class="so">Social</td>
+                    <td class="sc">Science</td>
+                    <td class="ka">Kannada</td>
+                </tr>
+
+                <!--Saturday time table-->
+                <tr>
+                    <th class="a1">Saturday</th>
+                    <td class="ma">Mathematics</td>
+                    <td class="ka">Kannada</td>
+                    <td class="it" colspan="3">Innovative Thinking/Activity</td>
+                    <td class="li">Library</td>
+                    <td class="cm">Computer</td>
+                </tr>
+
+            </table>
+        </center>
+    </body>
+</html>
