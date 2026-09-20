@@ -24,138 +24,213 @@
                 background-size: 400% 400%;
                 color: #222;
             }
-            h1{
+
+            .container{
+                width: 100%;
+                max-width: 1400px;
+                margin: auto;
+                padding: 30px;
+                background: rgba(255,255,255,0.12);
+                border: 1px solid rgba(255,255,255,0.25);
+                border-radius: 25px;
+                box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+            }
+
+            .heading{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .heading h1{
                 font-size: 40px;
-                color: red;
+                color: white;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                text-shadow: 0 0 10px rgba(255,255,255,0.6),
+                             0 0 25px rgba(59,130,246,0.8);
+            }
+
+            .heading p{
+                color: #e2e8f0;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .table-wrapper{
+                width: 100%;
+                border-radius: 18px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             }
 
             table{
-                font-size: 16px;
-                text-align: center;
+                width: 100%;
+                min-width: 1100px;
+                font-size: 15px;
                 margin: auto;
                 border-collapse: collapse;
                 background-color: white;
             }
 
-            th, td{
-                border: 2px solid black;
-                padding: 12px;
+            thead th{
+                border: 2px solid #64748b;
+                background: linear-gradient(135deg,
+                            #1e293b,
+                            #334155);
+                padding: 16px 12px;
+                color: white;
+                font-size: 14px;
+                white-space: nowrap;
             }
 
-            .tr{
-                border: 3px;;
+            thead th:first-child{
+                background: linear-gradient(135deg,
+                          #dc2626,
+                          #991b1b);
             }
 
-            .a1{background-color: burlywood;}
-            .ka{background-color: cadetblue;}
-            .en{background-color: lightgreen;}
-            .hi{background-color: yellow;}
-            .so{background-color: lightsalmon;}
-            .ma{background-color: lightblue;}
-            .sc{background-color: cornsilk;}
-            .cm{background-color: gold;}
-            .li{background-color: cyan;}
-            .it{background-color: aliceblue;}
+            tbody th,
+            tbody td{
+                border: 1px solid #cbd5e1;
+                padding: 15px 12px;
+                transition: transform 0.25s ease,
+                            box-shadow 0.25s ease;
+            }
+
+            tbody th{
+                background: linear-gradient(135deg,#f1f5f9,#e2e8f0);
+                color: #0f172a;
+                font-weight: bold;
+            }
+
+            .ka{background-color: #67e8f9;}
+            .en{background-color: #86efac;}
+            .hi{background-color: #fde047;}
+            .so{background-color: #fdba74;}
+            .ma{background-color: #93c5fd;}
+            .sc{background-color: #fef3c7;}
+            .cm{background-color: #facc15;}
+            .li{background-color: #22d3ee;}
+            .it{background-color: #dbeafe;}
 
             .break,.lunch{
-                background-color: lightpink;
+                background-color: #f9a8d4;
+                font-weight: bold;
+                color: #831843;
+            }
+
+            .sports{
+                background-color: #c4b5fd;
+                font-weight: bold;
             }
         </style>
     </head>
 
     <!--Body part-->
     <body>
-        
-        <center>
-            <!--Heading for the time table-->
-            <h1><b>Time Table of 10th Class</b></h1>
+        <div class="container">
 
-            <table>
+            <div class="heading">
+                <!--Heading for the time table-->
+                <h1>School Time Table</h1>
+                
+                <p>10th class .weekly Academic Schedule</p>
+            </div>
 
-                <tr>
-                    <th class="a1">Day/Time</th>
-                    <th class="a1">9:00-9:50</th>
-                    <th class="a1">9:55-10:45</th>
-                    <th class="a1">10:45-11:00</th>
-                    <th class="a1">11:00-11:50</th>
-                    <th class="a1">11:55-12:45</th>
-                    <th class="a1">12:50-1:40</th>
-                    <th class="a1">1:40-2:30</th>
-                    <th class="a1">2:30-3:20</th>
-                    <th class="a1">3:25-4:15</th>
-                </tr>
+            <div class="table-wrapper">
+                
+                <table>
+                
+                    <thead>
 
-                <!--Monday time table-->
-                <tr>
-                    <th class="a1">Monday</th>
-                    <td class="ka">Kannada</td>
-                    <td class="ma">Mathematics</td>
-                    <td class="break" rowspan="6">Break</td>
-                    <td class="en">English</td>
-                    <td class="so">Social</td>
-                    <td class="hi">Hindi</td>
-                    <td class="lunch" rowspan="6">Lunch</td>
-                    <td class="sc">Science</td>
-                    <td class="cm">Computer</td>
-                </tr>
+                        <tr>
+                            <th>Day/Time</th>
+                            <th>9:00-9:50</th>
+                            <th>9:55-10:45</th>
+                            <th>10:45-11:00</th>
+                            <th>11:00-11:50</th>
+                            <th>11:55-12:45</th>
+                            <th>12:50-1:40</th>
+                            <th>1:40-2:30</th>
+                            <th>2:30-3:20</th>
+                            <th>3:25-4:15</th>
+                        </tr>
+                        
+                    </thead>
 
-                <!--Tuesday time table -->
-                <tr>
-                    <th class="a1">Tuesday</th>
-                    <td class="sc">Science</td>
-                    <td class="en">English</td>
-                    <td class="hi">Hindi</td>
-                    <td class="cm">Computer</td>
-                    <td class="ka">Kannada</td>
-                    <td class="so">Social</td>
-                    <td class="ma">Mathematics</td>
-                </tr>
+                    <tbody>
+                    <!--Monday time table-->
+                        <tr>
+                            <th>Monday</th>
+                            <td class="ka">Kannada</td>
+                            <td class="ma">Mathematics</td>
+                            <td class="break" rowspan="6">Break</td>
+                            <td class="en">English</td>
+                            <td class="so">Social</td>
+                            <td class="hi">Hindi</td>
+                            <td class="lunch" rowspan="6">Lunch</td>
+                            <td class="sc">Science</td>
+                            <td class="cm">Computer</td>
+                        </tr>
 
-                <!--wednesday time table-->
-                <tr>
-                    <th class="a1">Wednesday</th>
-                    <td class="cm">Computer</td>
-                    <td class="so">Social</td>
-                    <td class="ka">Kannada</td>
-                    <td class="ma">Mathematics</td>
-                    <td class="sc">Science</td>
-                    <td class="hi">Hindi</td>
-                    <td class="en">English</td>
-                </tr>
+                        <!--Tuesday time table -->
+                        <tr>
+                            <th>Tuesday</th>
+                            <td class="sc">Science</td>
+                            <td class="en">English</td>
+                            <td class="hi">Hindi</td>
+                            <td class="cm">Computer</td>
+                            <td class="ka">Kannada</td>
+                            <td class="so">Social</td>
+                            <td class="ma">Mathematics</td>
+                        </tr>
 
-                <!--Thursday time table-->
-                <tr>
-                    <th class="a1">Thursday</th>
-                    <td class="en">English</td>
-                    <td class="sc">Science</td>
-                    <td class="so">Social</td>
-                    <td class="hi">Hindi</td>
-                    <td class="en">English</td>
-                    <td class="Se" colspan="2">Sports/Spoken English</td>
-                </tr>
+                        <!--wednesday time table-->
+                        <tr>
+                            <th>Wednesday</th>
+                            <td class="cm">Computer</td>
+                            <td class="so">Social</td>
+                            <td class="ka">Kannada</td>
+                            <td class="ma">Mathematics</td>
+                            <td class="sc">Science</td>
+                            <td class="hi">Hindi</td>
+                            <td class="en">English</td>
+                        </tr>
 
-                <!--Friday time table-->
-                    <th class="a1">Friday</th>
-                    <td class="hi">Hindi</td>
-                    <td class="en">English</td>
-                    <td class="ma">Mathematics</td>
-                    <td class="cm">Computer</td>
-                    <td class="so">Social</td>
-                    <td class="sc">Science</td>
-                    <td class="ka">Kannada</td>
-                </tr>
+                        <!--Thursday time table-->
+                        <tr>
+                            <th>Thursday</th>
+                            <td class="en">English</td>
+                            <td class="sc">Science</td>
+                            <td class="so">Social</td>
+                            <td class="hi">Hindi</td>
+                            <td class="en">English</td>
+                            <td class="sports" colspan="2">Sports/Spoken English</td>
+                        </tr>
 
-                <!--Saturday time table-->
-                <tr>
-                    <th class="a1">Saturday</th>
-                    <td class="ma">Mathematics</td>
-                    <td class="ka">Kannada</td>
-                    <td class="it" colspan="3">Innovative Thinking/Activity</td>
-                    <td class="li">Library</td>
-                    <td class="cm">Computer</td>
-                </tr>
+                        <!--Friday time table-->
+                        <tr>
+                            <th>Friday</th>
+                            <td class="hi">Hindi</td>
+                            <td class="en">English</td>
+                            <td class="ma">Mathematics</td>
+                            <td class="cm">Computer</td>
+                            <td class="so">Social</td>
+                            <td class="sc">Science</td>
+                            <td class="ka">Kannada</td>
+                        </tr>
 
-            </table>
-        </center>
+                        <!--Saturday time table-->
+                        <tr>
+                            <th>Saturday</th>
+                            <td class="ma">Mathematics</td>
+                            <td class="ka">Kannada</td>
+                            <td class="it" colspan="3">Innovative Thinking/Activity</td>
+                            <td class="li">Library</td>
+                            <td class="cm">Computer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
