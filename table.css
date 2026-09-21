@@ -139,6 +139,7 @@ tbody th{
 /*Break and launch*/
 .break,.lunch{
     background-color: #f9a8d4;
+    text-align: center;
     font-weight: bold;
     color: #831843;
 }
@@ -146,7 +147,6 @@ tbody th{
 /*Sports  section*/
 .sports{
     background-color: #c4b5fd;
-    font-weight: bold;
 }
 
 /*Legend heading*/
